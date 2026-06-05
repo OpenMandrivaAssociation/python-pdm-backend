@@ -2,7 +2,7 @@
 %define oname pdm_backend
 
 Name:		python-pdm-backend
-Version:	2.4.8
+Version:	2.4.9
 Release:	1
 Summary:	The build backend used by PDM that supports latest packaging standards
 License:	MIT
@@ -20,5 +20,5 @@ BuildRequires:	python%{pyver}dist(wheel)
 The build backend used by PDM that supports latest packaging standards
 
 %files
-%{py_sitedir}/pdm
-%{py_sitedir}/%{oname}-%{version}.dist-info
+%{python_sitelib}/pdm
+%{python_sitelib}/%{oname}-%{version}.dist-info
